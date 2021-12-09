@@ -8,7 +8,7 @@ This repository collects all practive of the IC contest. The problem of the cont
 |        |           Topic            | Implementation | Problem Description |
 |:------:|:--------------------------:|:--------------:|:-------------------:|
 |  2007  |                            |                |                     |
-| 2007-F | Sprite Game Display Engine |      [link](https://github.com/linkingmon/ICC_practice/graduate/ICC_2007_final)      |        [link](https://github.com/linkingmon/ICC_practice/graduate/ICC_2007_final/ICC2007_cell-based_final_competition.pdf)          |
+| 2007-F | Sprite Game Display Engine |      [link](https://github.com/linkingmon/ICC_practice/tree/main/graduate/ICC_2007_final)      |        [link](https://github.com/linkingmon/ICC_practice/tree/main/graduate/ICC_2007_final/ICC2007_cell-based_final_competition.pdf)          |
 |  2008  |                            |                |                     |
 | 2008-F |                            |                |                     |
 |  2009  |                            |                |                     |
@@ -42,7 +42,7 @@ This repository collects all practive of the IC contest. The problem of the cont
 |        |          Topic          | Implementation | Problem Description |
 |:------:|:-----------------------:|:--------------:|:-------------------:|
 |  2018  |                         |                |                     |
-| 2018-F |  Two Protocal Arbiter   |      [link](https://github.com/linkingmon/ICC_practice/undergraduate/ICC_2018_final)      |        [link](https://github.com/linkingmon/ICC_practice/undergraduate/ICC_2018_final/E_ICC2018_univ_cell-based_final.pdf)         |
+| 2018-F |  Two Protocal Arbiter   |      [link](https://github.com/linkingmon/ICC_practice/tree/main/undergraduate/ICC_2018_final)      |        [link](https://github.com/linkingmon/ICC_practice/tree/main/undergraduate/ICC_2018_final/E_ICC2018_univ_cell-based_final.pdf)         |
 |  2019  |                         |                |                     |
 | 2019-F |                         |                |                     |
 |  2020  | String Matching Machine |         |                 |
