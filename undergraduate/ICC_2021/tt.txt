@@ -1,0 +1,2117 @@
+ncverilog: 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+Recompiling... reason: file './geofence.v' is newer than expected.
+	expected: Wed Mar 24 13:10:07 2021
+	actual:   Wed Mar 24 13:11:08 2021
+file: geofence.v
+	module worklib.geofence:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	.a(a),
+	   |
+ncelab: *W,CUVMPW (./geofence.v,42|4): port sizes differ in port connection (11/12).
+	.b(b),
+	   |
+ncelab: *W,CUVMPW (./geofence.v,43|4): port sizes differ in port connection (11/12).
+	.c(c),
+	   |
+ncelab: *W,CUVMPW (./geofence.v,44|4): port sizes differ in port connection (11/12).
+	.d(d),
+	   |
+ncelab: *W,CUVMPW (./geofence.v,45|4): port sizes differ in port connection (11/12).
+	Building instance overlay tables: .............
+		$display("R is %d for (%d,%d) %d", $sqrt((X_0-X_ref)*(X_0-X_ref)+(Y_0-Y_ref)*(Y_0-Y_ref)), X_0, Y_0, R_0);	
+		                                       |
+ncelab: *W,REALCV (./geofence.v,57|41): Real argument converted to integer for (%d).
+....... Done
+	Generating native compiled code:
+		worklib.geofence:v <0x3edafda0>
+			streams:  10, words: 48542
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                  3       3
+		Registers:               56      56
+		Scalar wires:             4       -
+		Vectored wires:           8       -
+		Always blocks:            8       8
+		Initial blocks:           8       8
+		Cont. assignments:        1       3
+		Pseudo assignments:       4       4
+		Simulation timescale:  10ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+FSDB Dumper for IUS, Release Verdi_N-2017.12, Linux, 11/12/2017
+(C) 1996 - 2017 by Synopsys, Inc.
+*Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
+*Verdi* : Create FSDB file 'geofence.fsdb'
+*Verdi* : Begin traversing the scopes, layer (0).
+*Verdi* : End of traversing.
+*Verdi* : Begin traversing the MDAs, layer (0).
+*Verdi* : Enable +mda and +packedmda dumping.
+*Verdi* : End of traversing the MDAs.
+----------------------
+-- Simulation Start --
+----------------------
+Object1(in):   X     Y     R
+          1:  103,  340,  118
+          2:  755,  510,  567
+          3:  103,   50,  294
+          4:  982,  280,  763
+          5:  298,  560,  252
+          6:  710,   50,  559
+Values in X_ary
+  103   755   103   982   298   710
+--------------------
+Values in X_ary after sort
+  103   298   755   982   710   103
+--------------------
+B2 B4 are (    -198176,  -40917)
+B2 B4 are (    -198176,  -40917)
+Getting (  103,  340)   118
+Getting (  755,  510)   567
+Getting (  710,   50)   559
+The reference point is at (        220,        320)
+R is         119 for (     103,     340)      118
+R is         252 for (     298,     560)      252
+R is         568 for (     755,     510)      567
+R is         763 for (     982,     280)      763
+R is         559 for (     710,      50)      559
+R is         294 for (     103,      50)      294
+X,Y ref are (  -64426930,  -93614948)
+o_data:  -29640 B2_r:          0
+o_data:  -43640 B2_r:      29640
+o_data: -113580 B2_r:     -14000
+o_data: -270820 B2_r:      99580
+o_data: -166180 B2_r:    -171240
+o_data: -289420 B2_r:      -5060
+o_data: -186140 B2_r:    -294480
+o_data: -149700 B2_r:    -108340
+o_data: -163890 B2_r:    -258040
+o_data:   30350 B2_r:     -94150
+o_data:  -33930 B2_r:     -63800
+o_data:   29870 B2_r:     -29870
+o_data:       x B2_r:          0
+Object1: Golde/Return => 1/1, PASS
+
+Object2(out):  X     Y     R
+          1:  298,  560,  178
+          2:  103,   50,  680
+          3:  103,  340,  397
+          4:  710,   50,  830
+          5:  755,  510,  574
+          6:  982,  280,  879
+Values in X_ary
+  298   103   103   710   755   982
+--------------------
+Values in X_ary after sort
+  298   755   982   710   103   103
+--------------------
+B2 B4 are (      50318,  410005)
+B2 B4 are (      50318,  410005)
+Getting (  298,  560)   178
+Getting (  982,  280)   879
+Getting (  103,   50)   680
+The reference point is at (        223,        718)
+R is         175 for (     298,     560)      178
+R is         571 for (     755,     510)      574
+R is         876 for (     982,     280)      879
+R is         827 for (     710,      50)      830
+R is         679 for (     103,      50)      680
+R is         397 for (     103,     340)      397
+X,Y ref are (  -90183700, -289856070)
+o_data:   68456 B2_r:          0
+o_data: -270820 B2_r:      68456
+o_data:  -75144 B2_r:    -202364
+o_data: -289420 B2_r:    -127220
+o_data: -293706 B2_r:    -416640
+o_data: -149700 B2_r:    -122934
+o_data: -405476 B2_r:    -272634
+o_data:   30350 B2_r:     132842
+o_data:  -34800 B2_r:     163192
+o_data:   29870 B2_r:     197992
+o_data:   47310 B2_r:     227862
+o_data:  -43640 B2_r:     275172
+o_data:       x B2_r:     231532
+Object2: Golde/Return => 0/0, PASS
+
+Object3(out):  X     Y     R
+          1:  400,   80,  272
+          2:  300,  800,  659
+          3:  980,  120,  840
+          4:  710,  620,  732
+          5:  103,  500,  342
+          6:  130,  210,   50
+Values in X_ary
+  400   300   980   710   103   130
+--------------------
+Values in X_ary after sort
+  400   130   103   300   710   980
+--------------------
+B2 B4 are (     -25615, -130130)
+B2 B4 are (     -25615, -130130)
+Getting (  400,   80)   272
+Getting (  103,  500)   342
+Getting (  710,  620)   732
+The reference point is at (        140,        160)
+R is         272 for (     400,      80)      272
+R is          51 for (     130,     210)       50
+R is         342 for (     103,     500)      342
+R is         660 for (     300,     800)      659
+R is         732 for (     710,     620)      732
+R is         841 for (     980,     120)      840
+X,Y ref are (  -40822500,  -46589260)
+o_data:   12200 B2_r:          0
+o_data:   73600 B2_r:      12200
+o_data:   -1550 B2_r:      85800
+o_data:   43370 B2_r:      87350
+o_data:  -78080 B2_r:     130720
+o_data:  -67600 B2_r:     208800
+o_data: -291200 B2_r:     141200
+o_data: -382000 B2_r:     432400
+o_data: -409200 B2_r:      50400
+o_data: -522400 B2_r:     459600
+o_data:  -56800 B2_r:     -62800
+o_data:   30400 B2_r:      -6000
+o_data:       x B2_r:      24400
+Object3: Golde/Return => 0/0, PASS
+
+Object4(in):   X     Y     R
+          1:  298,  560,  430
+          2:  755,  510,  707
+          3:  103,   50,  116
+          4:  710,   50,  580
+          5:  982,  280,  850
+          6:  103,  340,  183
+Values in X_ary
+  298   755   103   710   982   103
+--------------------
+Values in X_ary after sort
+  298   755   982   710   103   103
+--------------------
+B2 B4 are (     -51360,  108925)
+B2 B4 are (     -51360,  108925)
+Getting (  298,  560)   430
+Getting (  982,  280)   850
+Getting (  103,   50)   116
+The reference point is at (        143,        158)
+R is         431 for (     298,     560)      430
+R is         706 for (     755,     510)      707
+R is         848 for (     982,     280)      850
+R is         577 for (     710,      50)      580
+R is         115 for (     103,      50)      116
+R is         186 for (     103,     340)      183
+X,Y ref are (  -57737080,  -64090140)
+o_data: -191464 B2_r:          0
+o_data: -270820 B2_r:     191464
+o_data: -220664 B2_r:     -79356
+o_data: -289420 B2_r:     141308
+o_data: -159786 B2_r:    -148112
+o_data: -149700 B2_r:      11674
+o_data:  -65556 B2_r:    -138026
+o_data:   30350 B2_r:     -72470
+o_data:  -11600 B2_r:     -42120
+o_data:   29870 B2_r:     -30520
+o_data:  -44290 B2_r:       -650
+o_data:  -43640 B2_r:      43640
+o_data:       x B2_r:          0
+Object4: Golde/Return => 1/1, PASS
+
+Object5(in):   X     Y     R
+          1:  755,  510,  345
+          2:  982,  280,  616
+          3:  298,  560,  122
+          4:  710,   50,  549
+          5:  103,   50,  553
+          6:  103,  340,  350
+Values in X_ary
+  755   982   298   710   103   103
+--------------------
+Values in X_ary after sort
+  755   982   710   103   103   298
+--------------------
+B2 B4 are (     252950,  353695)
+B2 B4 are (     252950,  353695)
+Getting (  755,  510)   345
+Getting (  710,   50)   549
+Getting (  103,  340)   350
+The reference point is at (        407,        505)
+R is         348 for (     755,     510)      345
+R is         617 for (     982,     280)      616
+R is         547 for (     710,      50)      549
+R is         547 for (     103,      50)      553
+R is         346 for (     103,     340)      350
+R is         122 for (     298,     560)      122
+X,Y ref are ( -119104280, -147763989)
+o_data:  -81175 B2_r:          0
+o_data: -289420 B2_r:      81175
+o_data: -193450 B2_r:    -208245
+o_data: -149700 B2_r:     -14795
+o_data: -276185 B2_r:    -164495
+o_data:   30350 B2_r:     111690
+o_data:  -88160 B2_r:     142040
+o_data:   29870 B2_r:     230200
+o_data:  -34705 B2_r:     260070
+o_data:  -43640 B2_r:     294775
+o_data:  -19685 B2_r:     251135
+o_data: -270820 B2_r:     270820
+o_data:       x B2_r:          0
+Object5: Golde/Return => 1/1, PASS
+
+Object6(out):  X     Y     R
+          1:  755,  510,  743
+          2:  103,  340,  296
+          3:  710,   50,  898
+          4:  982,  280, 1021
+          5:  298,  560,  285
+          6:  103,   50,  580
+Values in X_ary
+  755   103   710   982   298   103
+--------------------
+Values in X_ary after sort
+  755   982   710   103   103   298
+--------------------
+B2 B4 are (     288940,  119741)
+B2 B4 are (     288940,  119741)
+Getting (  755,  510)   743
+Getting (  710,   50)   898
+Getting (  103,  340)   296
+The reference point is at (         20,        626)
+R is         744 for (     755,     510)      743
+R is        1022 for (     982,     280)     1021
+R is         899 for (     710,      50)      898
+R is         582 for (     103,      50)      580
+R is         298 for (     103,     340)      296
+R is         286 for (     298,     560)      285
+X,Y ref are (   -5961060, -183000535)
+o_data: -142718 B2_r:          0
+o_data: -289420 B2_r:     142718
+o_data: -315372 B2_r:    -146702
+o_data: -149700 B2_r:     168670
+o_data: -349632 B2_r:      18970
+o_data:   30350 B2_r:     368602
+o_data:   24070 B2_r:     398952
+o_data:   29870 B2_r:     423022
+o_data:   74030 B2_r:     452892
+o_data:  -43640 B2_r:     526922
+o_data:   16262 B2_r:     483282
+o_data: -270820 B2_r:     499544
+o_data:       x B2_r:     228724
+Object6: Golde/Return => 0/0, PASS
+
+Object7(out):  X     Y     R
+          1:  103,   50,  748
+          2:  710,   50,  148
+          3:  298,  560,  718
+          4:  755,  510,  420
+          5:  982,  280,  223
+          6:  103,  340,  784
+Values in X_ary
+  103   710   298   755   982   103
+--------------------
+Values in X_ary after sort
+  103   103   298   755   982   710
+--------------------
+B2 B4 are (    -216638, -769695)
+B2 B4 are (    -216638, -769695)
+Getting (  103,   50)   748
+Getting (  298,  560)   718
+Getting (  982,  280)   223
+The reference point is at (        849,         99)
+R is         748 for (     103,      50)      748
+R is         784 for (     103,     340)      784
+R is         718 for (     298,     560)      718
+R is         422 for (     755,     510)      420
+R is         225 for (     982,     280)      223
+R is         147 for (     710,      50)      148
+X,Y ref are ( -342717710,  -40334277)
+o_data: -216340 B2_r:          0
+o_data:   29870 B2_r:     216340
+o_data: -211115 B2_r:     246210
+o_data:  -43640 B2_r:     457325
+o_data: -183127 B2_r:     413685
+o_data: -270820 B2_r:     596812
+o_data:  -71677 B2_r:     325992
+o_data: -289420 B2_r:     397669
+o_data:   18642 B2_r:     108249
+o_data: -149700 B2_r:     126891
+o_data:  -29743 B2_r:     -22809
+o_data:   30350 B2_r:       6934
+o_data:       x B2_r:      37284
+Object7: Golde/Return => 0/0, PASS
+
+Object8(out):  X     Y     R
+          1:  300,  800,  330
+          2:  710,  620,  690
+          3:  400,   80,  664
+          4:  103,  500,  150
+          5:  130,  210,  429
+          6:  980,  120, 1084
+Values in X_ary
+  300   710   400   103   130   980
+--------------------
+Values in X_ary after sort
+  300   710   980   400   130   103
+--------------------
+B2 B4 are (     287798,  372070)
+B2 B4 are (     287798,  372070)
+Getting (  300,  800)   330
+Getting (  980,  120)  1084
+Getting (  130,  210)   429
+The reference point is at (        160,        580)
+R is         261 for (     300,     800)      330
+R is         551 for (     710,     620)      690
+R is         940 for (     980,     120)     1084
+R is         555 for (     400,      80)      664
+R is         371 for (     130,     210)      429
+R is          98 for (     103,     500)      150
+X,Y ref are (  -83022460, -300192460)
+o_data: -115400 B2_r:          0
+o_data: -382000 B2_r:     115400
+o_data: -285800 B2_r:    -266600
+o_data: -522400 B2_r:      19200
+o_data: -299600 B2_r:    -503200
+o_data:   30400 B2_r:    -203600
+o_data: -103800 B2_r:    -173200
+o_data:   73600 B2_r:     -69400
+o_data:  -18690 B2_r:       4200
+o_data:   43370 B2_r:      22890
+o_data:   -1340 B2_r:      66260
+o_data:  -67600 B2_r:      67600
+o_data:       x B2_r:          0
+Object8: Golde/Return => 0/1, FAIL
+
+Object9(in):   X     Y     R
+          1:  302,  423,  574
+          2:  503,  521,  501
+          3:  694,  768,  420
+          4:   10,  664,  468
+          5:   43, 1003,  298
+          6:  694, 1023,  354
+Values in X_ary
+  302   503   694    10    43   694
+--------------------
+Values in X_ary after sort
+  302    10    43   694   694   503
+--------------------
+B2 B4 are (    -489199, -477202)
+B2 B4 are (    -489199, -477202)
+Getting (  302,  423)   574
+Getting (   43, 1003)   298
+Getting (  694,  768)   420
+The reference point is at (        344,        997)
+R is         576 for (     302,     423)      574
+R is         472 for (      10,     664)      468
+R is         301 for (      43,    1003)      298
+R is         351 for (     694,    1023)      354
+R is         418 for (     694,     768)      420
+R is         502 for (     503,     521)      501
+X,Y ref are ( -109191345, -315891758)
+o_data: -177730 B2_r:          0
+o_data:  196298 B2_r:     177730
+o_data: -102237 B2_r:     374028
+o_data:  -18522 B2_r:     476265
+o_data:   -9926 B2_r:     457743
+o_data: -652093 B2_r:     467669
+o_data:  -89250 B2_r:    -184424
+o_data: -176970 B2_r:     -95174
+o_data: -130189 B2_r:    -272144
+o_data:  -24730 B2_r:    -141955
+o_data: -111258 B2_r:    -166685
+o_data:   55427 B2_r:     -55427
+o_data:       x B2_r:          0
+Object9: Golde/Return => 1/1, PASS
+
+Object10(out):  X     Y     R
+          1:  710,  620,  316
+          2:  980,  120,  561
+          3:  130,  210, 1007
+          4:  400,   80,  863
+          5:  103,  500,  935
+          6:  300,  800,  730
+Values in X_ary
+  710   980   130   400   103   300
+--------------------
+Values in X_ary after sort
+  710   980   400   130   103   300
+--------------------
+B2 B4 are (     683506,  701130)
+B2 B4 are (     683506,  701130)
+Getting (  710,  620)   316
+Getting (  400,   80)   863
+Getting (  103,  500)   935
+The reference point is at (       1021,        675)
+R is         316 for (     710,     620)      316
+R is         557 for (     980,     120)      561
+R is         860 for (     400,      80)      863
+R is        1005 for (     130,     210)     1007
+R is         935 for (     103,     500)      935
+R is         732 for (     300,     800)      730
+X,Y ref are ( -296835240, -196294706)
+o_data:  170350 B2_r:          0
+o_data: -522400 B2_r:     170350
+o_data: -320260 B2_r:    -352050
+o_data:   30400 B2_r:     -31790
+o_data: -241380 B2_r:      -1390
+o_data:   73600 B2_r:     239990
+o_data: -270945 B2_r:     313590
+o_data:   43370 B2_r:     584535
+o_data: -240925 B2_r:     627905
+o_data:  -67600 B2_r:     868830
+o_data:   78530 B2_r:     801230
+o_data: -382000 B2_r:     879760
+o_data:       x B2_r:     497760
+Object10: Golde/Return => 0/0, PASS
+
+Object11(in):   X     Y     R
+          1:  302,  423,  315
+          2:  694,  768,  546
+          3:  694, 1023,  630
+          4:  503,  521,  394
+          5:   43, 1003,  322
+          6:   10,  664,  146
+Values in X_ary
+  302   694   694   503    43    10
+--------------------
+Values in X_ary after sort
+  302    10    43   694   694   503
+--------------------
+B2 B4 are (    -366633, -301218)
+B2 B4 are (    -366633, -301218)
+Getting (  302,  423)   315
+Getting (   43, 1003)   322
+Getting (  694,  768)   546
+The reference point is at (        153,        704)
+R is         318 for (     302,     423)      315
+R is         148 for (      10,     664)      146
+R is         319 for (      43,    1003)      322
+R is         628 for (     694,    1023)      630
+R is         545 for (     694,     768)      546
+R is         395 for (     503,     521)      394
+X,Y ref are (  -48699335, -223068846)
+o_data:  -46143 B2_r:          0
+o_data:  196298 B2_r:      46143
+o_data:  -47157 B2_r:     242441
+o_data:  -18522 B2_r:     289598
+o_data: -196849 B2_r:     271076
+o_data: -652093 B2_r:     467925
+o_data: -137955 B2_r:    -184168
+o_data: -176970 B2_r:     -46213
+o_data: -121403 B2_r:    -223183
+o_data:  -24730 B2_r:    -101780
+o_data:  -71083 B2_r:    -126510
+o_data:   55427 B2_r:     -55427
+o_data:       x B2_r:          0
+Object11: Golde/Return => 1/1, PASS
+
+Object12(in):   X     Y     R
+          1:  980,  120,  733
+          2:  710,  620,  217
+          3:  103,  500,  433
+          4:  130,  210,  594
+          5:  300,  800,  235
+          6:  400,   80,  603
+Values in X_ary
+  980   710   103   130   300   400
+--------------------
+Values in X_ary after sort
+  980   400   130   103   300   710
+--------------------
+B2 B4 are (     364673, -118632)
+B2 B4 are (     364673, -118632)
+Getting (  980,  120)   733
+Getting (  130,  210)   594
+Getting (  300,  800)   235
+The reference point is at (        500,        674)
+R is         733 for (     980,     120)      733
+R is         602 for (     400,      80)      603
+R is         593 for (     130,     210)      594
+R is         433 for (     103,     500)      433
+R is         236 for (     300,     800)      235
+R is         217 for (     710,     620)      217
+X,Y ref are ( -258654520, -348814840)
+o_data: -340520 B2_r:          0
+o_data:   30400 B2_r:     340520
+o_data: -173380 B2_r:     370920
+o_data:   73600 B2_r:     544300
+o_data: -119828 B2_r:     617900
+o_data:   43370 B2_r:     737728
+o_data:  -84822 B2_r:     781098
+o_data:  -67600 B2_r:     865920
+o_data:  -15660 B2_r:     798320
+o_data: -382000 B2_r:     813980
+o_data:  -90420 B2_r:     431980
+o_data: -522400 B2_r:     522400
+o_data:       x B2_r:          0
+Object12: Golde/Return => 1/1, PASS
+
+Object13(out):  X     Y     R
+          1:  694, 1023,  392
+          2:   10,  664,  622
+          3:  503,  521,  172
+          4:  694,  768,  146
+          5:  302,  423,  392
+          6:   43, 1003,  694
+Values in X_ary
+  694    10   503   694   302    43
+--------------------
+Values in X_ary after sort
+  694   694   503   302    10    43
+--------------------
+B2 B4 are (     439817,  660194)
+B2 B4 are (     439817,  660194)
+Getting (  694, 1023)   392
+Getting (  503,  521)   172
+Getting (   10,  664)   622
+The reference point is at (        634,        630)
+R is         398 for (     694,    1023)      392
+R is         150 for (     694,     768)      146
+R is         170 for (     503,     521)      172
+R is         391 for (     302,     423)      392
+R is         625 for (      10,     664)      622
+R is         699 for (      43,    1003)      694
+X,Y ref are ( -174258317, -173336942)
+o_data:  -15300 B2_r:          0
+o_data: -176970 B2_r:      15300
+o_data:   11538 B2_r:    -161670
+o_data:  -24730 B2_r:    -150132
+o_data:   -9071 B2_r:    -174862
+o_data:   55427 B2_r:    -165791
+o_data: -140456 B2_r:    -110364
+o_data:  196298 B2_r:      30092
+o_data: -212658 B2_r:     226390
+o_data:  -18522 B2_r:     439048
+o_data: -254643 B2_r:     420526
+o_data: -652093 B2_r:     675169
+o_data:       x B2_r:      23076
+Object13: Golde/Return => 0/0, PASS
+
+Object14(in):   X     Y     R
+          1:  321,  870,  378
+          2: 1010,  643,  690
+          3:  321,  127,  365
+          4:  432,  123,  381
+          5:  567, 1003,  560
+          6:  970,  280,  668
+Values in X_ary
+  321  1010   321   432   567   970
+--------------------
+Values in X_ary after sort
+  321   567  1010   970   432   321
+--------------------
+B2 B4 are (    -120196,  330232)
+B2 B4 are (    -120196,  330232)
+Getting (  321,  870)   378
+Getting ( 1010,  643)   690
+Getting (  432,  123)   381
+The reference point is at (        336,        492)
+R is         378 for (     321,     870)      378
+R is         561 for (     567,    1003)      560
+R is         691 for (    1010,     643)      690
+R is         669 for (     970,     280)      668
+R is         381 for (     432,     123)      381
+R is         365 for (     321,     127)      365
+X,Y ref are ( -164749076, -240871604)
+o_data:  -94983 B2_r:          0
+o_data: -171327 B2_r:      94983
+o_data: -309533 B2_r:     -76344
+o_data: -648449 B2_r:     233189
+o_data: -238622 B2_r:    -415260
+o_data: -340910 B2_r:    -176638
+o_data: -213594 B2_r:    -517548
+o_data:   -1650 B2_r:    -303954
+o_data:  -40575 B2_r:    -305604
+o_data:   15381 B2_r:    -265029
+o_data:  -11145 B2_r:    -249648
+o_data:  238503 B2_r:    -238503
+o_data:       x B2_r:          0
+Object14: Golde/Return => 1/1, PASS
+
+Object15(out):  X     Y     R
+          1:  755,  510,  390
+          2:  103,   50,  732
+          3:  103,  340,  487
+          4:  298,  560,  193
+          5:  982,  280,  707
+          6:  710,   50,  720
+Values in X_ary
+  755   103   103   298   982   710
+--------------------
+Values in X_ary after sort
+  755   982   710   103   103   298
+--------------------
+B2 B4 are (     344912,  394492)
+B2 B4 are (     344912,  394492)
+Getting (  755,  510)   390
+Getting (  710,   50)   720
+Getting (  103,  340)   487
+The reference point is at (        417,        709)
+R is         392 for (     755,     510)      390
+R is         709 for (     982,     280)      707
+R is         721 for (     710,      50)      720
+R is         730 for (     103,      50)      732
+R is         485 for (     103,     340)      487
+R is         191 for (     298,     560)      193
+X,Y ref are ( -121889200, -207222644)
+o_data:  -32567 B2_r:          0
+o_data: -289420 B2_r:      32567
+o_data: -246638 B2_r:    -256853
+o_data: -149700 B2_r:     -10215
+o_data: -400013 B2_r:    -159915
+o_data:   30350 B2_r:     240098
+o_data:  -91060 B2_r:     270448
+o_data:   29870 B2_r:     361508
+o_data:    2875 B2_r:     391378
+o_data:  -43640 B2_r:     394253
+o_data:   74043 B2_r:     350613
+o_data: -270820 B2_r:     424656
+o_data:       x B2_r:     153836
+Object15: Golde/Return => 0/0, PASS
+
+Object16(out):  X     Y     R
+          1:  300,  800,  628
+          2:  980,  120,  875
+          3:  130,  210, 1096
+          4:  400,   80, 1039
+          5:  103,  500,  934
+          6:  710,  620,  416
+Values in X_ary
+  300   980   130   400   103   710
+--------------------
+Values in X_ary after sort
+  300   710   980   400   130   103
+--------------------
+B2 B4 are (      63220,  590460)
+B2 B4 are (      63220,  590460)
+Getting (  300,  800)   628
+Getting (  980,  120)   875
+Getting (  130,  210)  1096
+The reference point is at (        707,        797)
+R is         407 for (     300,     800)      628
+R is         177 for (     710,     620)      416
+R is         730 for (     980,     120)      875
+R is         780 for (     400,      80)     1039
+R is         823 for (     130,     210)     1096
+R is         673 for (     103,     500)      934
+X,Y ref are ( -365421320, -411912040)
+o_data:   72030 B2_r:          0
+o_data: -382000 B2_r:      72030
+o_data:   46290 B2_r:    -309970
+o_data: -522400 B2_r:    -263680
+o_data: -403580 B2_r:    -786080
+o_data:   30400 B2_r:    -382500
+o_data: -233500 B2_r:    -352100
+o_data:   73600 B2_r:    -118600
+o_data: -183179 B2_r:     -45000
+o_data:   43370 B2_r:     138179
+o_data: -122691 B2_r:     181549
+o_data:  -67600 B2_r:     304240
+o_data:       x B2_r:     236640
+Object16: Golde/Return => 0/0, PASS
+
+Object17(out):  X     Y     R
+          1:  103,  500,  784
+          2:  130,  210,  753
+          3:  400,   80,  540
+          4:  710,  620,  320
+          5:  980,  120,  247
+          6:  300,  800,  732
+Values in X_ary
+  103   130   400   710   980   300
+--------------------
+Values in X_ary after sort
+  103   300   710   980   400   130
+--------------------
+B2 B4 are (    -570074, -114424)
+B2 B4 are (    -570074, -114424)
+Getting (  103,  500)   784
+Getting (  710,  620)   320
+Getting (  400,   80)   540
+The reference point is at (        874,        345)
+R is         786 for (     103,     500)      784
+R is         732 for (     300,     800)      732
+R is         320 for (     710,     620)      320
+R is         249 for (     980,     120)      247
+R is         543 for (     400,      80)      540
+R is         756 for (     130,     210)      753
+X,Y ref are ( -254022120, -100464866)
+o_data: -261835 B2_r:          0
+o_data:  -67600 B2_r:     261835
+o_data:  -83230 B2_r:     194235
+o_data: -382000 B2_r:     277465
+o_data:    7750 B2_r:    -104535
+o_data: -522400 B2_r:     -96785
+o_data: -134740 B2_r:    -619185
+o_data:   30400 B2_r:    -484445
+o_data: -133170 B2_r:    -454045
+o_data:   73600 B2_r:    -320875
+o_data: -219405 B2_r:    -247275
+o_data:   43370 B2_r:     -27870
+o_data:       x B2_r:      15500
+Object17: Golde/Return => 0/0, PASS
+
+Object18(in):   X     Y     R
+          1:  503,  521,  154
+          2:  694,  768,  215
+          3:  694, 1023,  398
+          4:   43, 1003,  562
+          5:   10,  664,  490
+          6:  302,  423,  320
+Values in X_ary
+  503   694   694    43    10   302
+--------------------
+Values in X_ary after sort
+  503   302    10    43   694   694
+--------------------
+B2 B4 are (     149919, -434514)
+B2 B4 are (     149919, -434514)
+Getting (  503,  521)   154
+Getting (   10,  664)   490
+Getting (  694, 1023)   398
+The reference point is at (        501,        679)
+R is         158 for (     503,     521)      154
+R is         324 for (     302,     423)      320
+R is         491 for (      10,     664)      490
+R is         561 for (      43,    1003)      562
+R is         394 for (     694,    1023)      398
+R is         213 for (     694,     768)      215
+X,Y ref are ( -137687704, -186590537)
+o_data:  -31954 B2_r:          0
+o_data:   55427 B2_r:      31954
+o_data: -122711 B2_r:      87381
+o_data:  196298 B2_r:     210092
+o_data: -165954 B2_r:     406390
+o_data:  -18522 B2_r:     572344
+o_data: -220084 B2_r:     553822
+o_data: -652093 B2_r:     773906
+o_data:  -49215 B2_r:     121813
+o_data: -176970 B2_r:     171028
+o_data:  -30672 B2_r:      -5942
+o_data:  -24730 B2_r:      24730
+o_data:       x B2_r:          0
+Object18: Golde/Return => 1/1, PASS
+
+Object19(in):   X     Y     R
+          1:   43, 1003,  595
+          2:  302,  423,  550
+          3:   10,  664,  646
+          4:  694, 1023,  168
+          5:  694,  768,  124
+          6:  503,  521,  369
+Values in X_ary
+   43   302    10   694   694   503
+--------------------
+Values in X_ary after sort
+   43   694   694   503   302    10
+--------------------
+B2 B4 are (    -201126,  343100)
+B2 B4 are (    -201126,  343100)
+Getting (   43, 1003)   595
+Getting (  694,  768)   124
+Getting (  302,  423)   550
+The reference point is at (        625,        867)
+R is         598 for (      43,    1003)      595
+R is         171 for (     694,    1023)      168
+R is         121 for (     694,     768)      124
+R is         367 for (     503,     521)      369
+R is         549 for (     302,     423)      550
+R is         648 for (      10,     664)      646
+X,Y ref are ( -197988140, -274646918)
+o_data: -100176 B2_r:          0
+o_data: -652093 B2_r:     100176
+o_data:  -17595 B2_r:    -551917
+o_data: -176970 B2_r:    -534322
+o_data:  -35952 B2_r:    -711292
+o_data:  -24730 B2_r:    -675340
+o_data:  -57590 B2_r:    -700070
+o_data:   55427 B2_r:    -642480
+o_data: -207491 B2_r:    -587053
+o_data:  196298 B2_r:    -379562
+o_data: -201786 B2_r:    -183264
+o_data:  -18522 B2_r:      18522
+o_data:       x B2_r:          0
+Object19: Golde/Return => 1/1, PASS
+
+Object20(in):   X     Y     R
+          1:  980,  120,  785
+          2:  103,  500,  214
+          3:  710,  620,  574
+          4:  130,  210,  142
+          5:  300,  800,  486
+          6:  400,   80,  300
+Values in X_ary
+  980   103   710   130   300   400
+--------------------
+Values in X_ary after sort
+  980   400   130   103   300   710
+--------------------
+B2 B4 are (     158869,  -67615)
+B2 B4 are (     158869,  -67615)
+Getting (  980,  120)   785
+Getting (  130,  210)   142
+Getting (  300,  800)   486
+The reference point is at (        218,        320)
+R is         788 for (     980,     120)      785
+R is         301 for (     400,      80)      300
+R is         141 for (     130,     210)      142
+R is         214 for (     103,     500)      214
+R is         487 for (     300,     800)      486
+R is         576 for (     710,     620)      574
+X,Y ref are ( -112907950, -165851830)
+o_data: -146480 B2_r:          0
+o_data:   30400 B2_r:     146480
+o_data:  -41140 B2_r:     176880
+o_data:   73600 B2_r:     218020
+o_data:  -28490 B2_r:     291620
+o_data:   43370 B2_r:     320110
+o_data:  -69960 B2_r:     363480
+o_data:  -67600 B2_r:     433440
+o_data: -211560 B2_r:     365840
+o_data: -382000 B2_r:     577400
+o_data: -327000 B2_r:     195400
+o_data: -522400 B2_r:     522400
+o_data:       x B2_r:          0
+Object20: Golde/Return => 1/1, PASS
+
+Object21(out):  X     Y     R
+          1:  432,  123,  834
+          2:  321,  127,  833
+          3:  567, 1003,  173
+          4:  321,  870,  117
+          5:  970,  280,  885
+          6: 1010,  643,  686
+Values in X_ary
+  432   321   567   321   970  1010
+--------------------
+Values in X_ary after sort
+  432   321   321   567  1010   970
+--------------------
+B2 B4 are (    -670028, -728378)
+B2 B4 are (    -670028, -728378)
+Getting (  432,  123)   834
+Getting (  321,  870)   117
+Getting ( 1010,  643)   686
+The reference point is at (        397,        958)
+R is         836 for (     432,     123)      834
+R is         834 for (     321,     127)      833
+R is         116 for (     321,     870)      117
+R is         176 for (     567,    1003)      173
+R is         689 for (    1010,     643)      686
+R is         888 for (     970,     280)      885
+X,Y ref are ( -194618846, -469309886)
+o_data:  -92545 B2_r:          0
+o_data:   15381 B2_r:      92545
+o_data:  -56468 B2_r:     107926
+o_data:  238503 B2_r:     164394
+o_data:   11540 B2_r:     402897
+o_data: -171327 B2_r:     414437
+o_data:  -81135 B2_r:     243110
+o_data: -648449 B2_r:     324245
+o_data: -235119 B2_r:    -324204
+o_data: -340910 B2_r:     -89085
+o_data: -454725 B2_r:    -429995
+o_data:   -1650 B2_r:      24730
+o_data:       x B2_r:      23080
+Object21: Golde/Return => 0/0, PASS
+
+Object22(in):   X     Y     R
+          1:  710,   50,  238
+          2:  103,  340,  777
+          3:  982,  280,  122
+          4:  755,  510,  308
+          5:  298,  560,  664
+          6:  103,   50,  788
+Values in X_ary
+  710   103   982   755   298   103
+--------------------
+Values in X_ary after sort
+  710   103   103   298   755   982
+--------------------
+B2 B4 are (     463738, -142653)
+B2 B4 are (     463738, -142653)
+Getting (  710,   50)   238
+Getting (  103,  340)   777
+Getting (  755,  510)   308
+The reference point is at (        871,        224)
+R is         237 for (     710,      50)      238
+R is         787 for (     103,      50)      788
+R is         777 for (     103,     340)      777
+R is         664 for (     298,     560)      664
+R is         309 for (     755,     510)      308
+R is         124 for (     982,     280)      122
+X,Y ref are ( -254688850,  -65722161)
+o_data: -105618 B2_r:          0
+o_data:   30350 B2_r:     105618
+o_data: -222720 B2_r:     135968
+o_data:   29870 B2_r:     358688
+o_data: -191580 B2_r:     388558
+o_data:  -43640 B2_r:     580138
+o_data: -124902 B2_r:     536498
+o_data: -270820 B2_r:     661400
+o_data:  -38242 B2_r:     390580
+o_data: -289420 B2_r:     428822
+o_data:  -10298 B2_r:     139402
+o_data: -149700 B2_r:     149700
+o_data:       x B2_r:          0
+Object22: Golde/Return => 1/1, PASS
+
+Object23(in):   X     Y     R
+          1:  982,  280,  586
+          2:  103,   50,  337
+          3:  755,  510,  464
+          4:  710,   50,  348
+          5:  103,  340,  324
+          6:  298,  560,  364
+Values in X_ary
+  982   103   755   710   103   298
+--------------------
+Values in X_ary after sort
+  982   710   103   103   298   755
+--------------------
+B2 B4 are (     399894,  214710)
+B2 B4 are (     399894,  214710)
+Getting (  982,  280)   586
+Getting (  103,   50)   337
+Getting (  298,  560)   364
+The reference point is at (        398,        214)
+R is         588 for (     982,     280)      586
+R is         352 for (     710,      50)      348
+R is         338 for (     103,      50)      337
+R is         321 for (     103,     340)      324
+R is         360 for (     298,     560)      364
+R is         464 for (     755,     510)      464
+X,Y ref are ( -160882580,  -86597598)
+o_data: -116368 B2_r:          0
+o_data: -149700 B2_r:     116368
+o_data:  -99548 B2_r:     -33332
+o_data:   30350 B2_r:      66216
+o_data:  -85550 B2_r:      96566
+o_data:   29870 B2_r:     182116
+o_data:  -89470 B2_r:     211986
+o_data:  -43640 B2_r:     301456
+o_data: -153122 B2_r:     257816
+o_data: -270820 B2_r:     410938
+o_data: -149302 B2_r:     140118
+o_data: -289420 B2_r:     289420
+o_data:       x B2_r:          0
+Object23: Golde/Return => 1/1, PASS
+
+Object24(in):   X     Y     R
+          1:  503,  521,  205
+          2:   43, 1003,  571
+          3:  302,  423,   69
+          4:   10,  664,  337
+          5:  694, 1023,  661
+          6:  694,  768,  481
+Values in X_ary
+  503    43   302    10   694   694
+--------------------
+Values in X_ary after sort
+  503   302    10    43   694   694
+--------------------
+B2 B4 are (      77499, -304410)
+B2 B4 are (      77499, -304410)
+Getting (  503,  521)   205
+Getting (   10,  664)   337
+Getting (  694, 1023)   661
+The reference point is at (        296,        493)
+R is         209 for (     503,     521)      205
+R is          70 for (     302,     423)       69
+R is         333 for (      10,     664)      337
+R is         569 for (      43,    1003)      571
+R is         663 for (     694,    1023)      661
+R is         484 for (     694,     768)      481
+X,Y ref are (  -81407032, -135662989)
+o_data:  -14658 B2_r:          0
+o_data:   55427 B2_r:      14658
+o_data:  -18994 B2_r:      70085
+o_data:  196298 B2_r:      89079
+o_data: -102597 B2_r:     285377
+o_data:  -18522 B2_r:     387974
+o_data: -337070 B2_r:     369452
+o_data: -652093 B2_r:     706522
+o_data: -101490 B2_r:      54429
+o_data: -176970 B2_r:     155919
+o_data:  -45781 B2_r:     -21051
+o_data:  -24730 B2_r:      24730
+o_data:       x B2_r:          0
+Object24: Golde/Return => 1/1, PASS
+
+Object25(out):  X     Y     R
+          1:  321,  127,  922
+          2:  567, 1003,  228
+          3:  970,  280,  672
+          4: 1010,  643,  363
+          5:  432,  123,  875
+          6:  321,  870,  464
+Values in X_ary
+  321   567   970  1010   432   321
+--------------------
+Values in X_ary after sort
+  321   321   567  1010   970   432
+--------------------
+B2 B4 are (   -1003214, -649315)
+B2 B4 are (   -1003214, -649315)
+Getting (  321,  127)   922
+Getting (  567, 1003)   228
+Getting (  970,  280)   672
+The reference point is at (        785,        924)
+R is         922 for (     321,     127)      922
+R is         467 for (     321,     870)      464
+R is         232 for (     567,    1003)      228
+R is         360 for (    1010,     643)      363
+R is         670 for (     970,     280)      672
+R is         875 for (     432,     123)      875
+X,Y ref are ( -417102246, -490850588)
+o_data: -344752 B2_r:          0
+o_data:  238503 B2_r:     344752
+o_data:  -48428 B2_r:     583255
+o_data: -171327 B2_r:     631683
+o_data:   43483 B2_r:     460356
+o_data: -648449 B2_r:     503839
+o_data:  -92915 B2_r:    -144610
+o_data: -340910 B2_r:     -51695
+o_data: -375517 B2_r:    -392605
+o_data:   -1650 B2_r:     -17088
+o_data:  -90323 B2_r:     -18738
+o_data:   15381 B2_r:      71585
+o_data:       x B2_r:      86966
+Object25: Golde/Return => 0/0, PASS
+
+Object26(in):   X     Y     R
+          1:  970,  280,  684
+          2:  432,  123,  771
+          3: 1010,  643,  448
+          4:  321,  127,  802
+          5:  321,  870,  302
+          6:  567, 1003,  144
+Values in X_ary
+  970   432  1010   321   321   567
+--------------------
+Values in X_ary after sort
+  970   432   321   321   567  1010
+--------------------
+B2 B4 are (     537739, -377659)
+B2 B4 are (     537739, -377659)
+Getting (  970,  280)   684
+Getting (  321,  127)   802
+Getting (  567, 1003)   144
+The reference point is at (        620,        870)
+R is         686 for (     970,     280)      684
+R is         770 for (     432,     123)      771
+R is         801 for (     321,     127)      802
+R is         299 for (     321,     870)      302
+R is         143 for (     567,    1003)      144
+R is         451 for (    1010,     643)      448
+X,Y ref are ( -329209422, -462313316)
+o_data: -372370 B2_r:          0
+o_data:   -1650 B2_r:     372370
+o_data:  -83669 B2_r:     370720
+o_data:   15381 B2_r:     454389
+o_data: -222157 B2_r:     469770
+o_data:  238503 B2_r:     691927
+o_data:  -39767 B2_r:     930430
+o_data: -171327 B2_r:     970197
+o_data:  -39839 B2_r:     798870
+o_data: -648449 B2_r:     838709
+o_data: -150650 B2_r:     190260
+o_data: -340910 B2_r:     340910
+o_data:       x B2_r:          0
+Object26: Golde/Return => 1/1, PASS
+
+Object27(out):  X     Y     R
+          1:  755,  510,  386
+          2:  103,   50,  848
+          3:  982,  280,  709
+          4:  710,   50,  778
+          5:  103,  340,  607
+          6:  298,  560,  313
+Values in X_ary
+  755   103   982   710   103   298
+--------------------
+Values in X_ary after sort
+  755   982   710   103   103   298
+--------------------
+B2 B4 are (     389906,  461684)
+B2 B4 are (     389906,  461684)
+Getting (  755,  510)   386
+Getting (  710,   50)   778
+Getting (  103,  340)   607
+The reference point is at (        499,        798)
+R is         385 for (     755,     510)      386
+R is         708 for (     982,     280)      709
+R is         777 for (     710,      50)      778
+R is         846 for (     103,      50)      848
+R is         605 for (     103,     340)      607
+R is         312 for (     298,     560)      313
+X,Y ref are ( -146090620, -233442932)
+o_data:    6496 B2_r:          0
+o_data: -289420 B2_r:       6496
+o_data: -251986 B2_r:    -282924
+o_data: -149700 B2_r:     -30938
+o_data: -454036 B2_r:    -180638
+o_data:   30350 B2_r:     273398
+o_data: -114840 B2_r:     303748
+o_data:   29870 B2_r:     418588
+o_data:    2190 B2_r:     448458
+o_data:  -43640 B2_r:     450648
+o_data:  118816 B2_r:     407008
+o_data: -270820 B2_r:     525824
+o_data:       x B2_r:     255004
+Object27: Golde/Return => 0/0, PASS
+
+Object28(out):  X     Y     R
+          1:  503,  521,  494
+          2:  302,  423,  346
+          3:  694, 1023,  782
+          4:   10,  664,   40
+          5:   43, 1003,  378
+          6:  694,  768,  689
+Values in X_ary
+  503   302   694    10    43   694
+--------------------
+Values in X_ary after sort
+  503   302    10    43   694   694
+--------------------
+B2 B4 are (     -79491, -318114)
+B2 B4 are (     -79491, -318114)
+Getting (  503,  521)   494
+Getting (   10,  664)    40
+Getting (  694, 1023)   782
+The reference point is at (         21,        629)
+R is         494 for (     503,     521)      494
+R is         348 for (     302,     423)      346
+R is          37 for (      10,     664)       40
+R is         375 for (      43,    1003)      378
+R is         780 for (     694,    1023)      782
+R is         687 for (     694,     768)      689
+X,Y ref are (   -5878684, -173022647)
+o_data:  -68944 B2_r:          0
+o_data:   55427 B2_r:      68944
+o_data:    7569 B2_r:     124371
+o_data:  196298 B2_r:     131940
+o_data:   -4884 B2_r:     328238
+o_data:  -18522 B2_r:     333122
+o_data: -243034 B2_r:     314600
+o_data: -652093 B2_r:     557634
+o_data: -171615 B2_r:     -94459
+o_data: -176970 B2_r:      77156
+o_data: -139682 B2_r:     -99814
+o_data:  -24730 B2_r:      39868
+o_data:       x B2_r:      15138
+Object28: Golde/Return => 0/0, PASS
+
+Object29(out):  X     Y     R
+          1:  567, 1003,  516
+          2:  970,  280,  823
+          3:  321,  870,  269
+          4:  432,  123,  540
+          5: 1010,  643,  790
+          6:  321,  127,  503
+Values in X_ary
+  567   970   321   432  1010   321
+--------------------
+Values in X_ary after sort
+  567  1010   970   432   321   321
+--------------------
+B2 B4 are (     359635,  597540)
+B2 B4 are (     359635,  597540)
+Getting (  567, 1003)   516
+Getting (  970,  280)   823
+Getting (  321,  127)   503
+The reference point is at (        220,        617)
+R is         519 for (     567,    1003)      516
+R is         790 for (    1010,     643)      790
+R is         822 for (     970,     280)      823
+R is         538 for (     432,     123)      540
+R is         500 for (     321,     127)      503
+R is         272 for (     321,     870)      269
+X,Y ref are ( -117294504, -327949678)
+o_data: -295918 B2_r:          0
+o_data: -648449 B2_r:     295918
+o_data: -285730 B2_r:    -352531
+o_data: -340910 B2_r:     -66801
+o_data: -299056 B2_r:    -407711
+o_data:   -1650 B2_r:    -108655
+o_data:  -53986 B2_r:    -110305
+o_data:   15381 B2_r:     -56319
+o_data:   75043 B2_r:     -40938
+o_data:  238503 B2_r:      34105
+o_data:  -48805 B2_r:     272608
+o_data: -171327 B2_r:     321413
+o_data:       x B2_r:     150086
+Object29: Golde/Return => 0/0, PASS
+
+Object30(in):   X     Y     R
+          1:  103,  340,  769
+          2:  710,   50,  334
+          3:  103,   50,  822
+          4:  298,  560,  613
+          5:  755,  510,  203
+          6:  982,  280,  126
+Values in X_ary
+  103   710   103   298   755   982
+--------------------
+Values in X_ary after sort
+  103   298   755   982   710   103
+--------------------
+B2 B4 are (    -627034, -430098)
+B2 B4 are (    -627034, -430098)
+Getting (  103,  340)   769
+Getting (  755,  510)   203
+Getting (  710,   50)   334
+The reference point is at (        875,        342)
+R is         772 for (     103,     340)      769
+R is         617 for (     298,     560)      613
+R is         206 for (     755,     510)      203
+R is         124 for (     982,     280)      126
+R is         335 for (     710,      50)      334
+R is         825 for (     103,      50)      822
+X,Y ref are ( -255898600, -100093582)
+o_data: -169450 B2_r:          0
+o_data:  -43640 B2_r:     169450
+o_data:  -70776 B2_r:     125810
+o_data: -270820 B2_r:     196586
+o_data:  -10536 B2_r:     -74234
+o_data: -289420 B2_r:     -63698
+o_data:  -41474 B2_r:    -353118
+o_data: -149700 B2_r:    -311644
+o_data: -177244 B2_r:    -461344
+o_data:   30350 B2_r:    -284100
+o_data: -223880 B2_r:    -253750
+o_data:   29870 B2_r:     -29870
+o_data:       x B2_r:          0
+Object30: Golde/Return => 1/1, PASS
+
+Object31(out):  X     Y     R
+          1:  503,  521,  582
+          2:  694, 1023, 1097
+          3:   10,  664,  571
+          4:   43, 1003,  904
+          5:  694,  768,  893
+          6:  302,  423,  380
+Values in X_ary
+  503   694    10    43   694   302
+--------------------
+Values in X_ary after sort
+  503   302    10    43   694   694
+--------------------
+B2 B4 are (      35385, -219019)
+B2 B4 are (      35385, -219019)
+Getting (  503,  521)   582
+Getting (   10,  664)   571
+Getting (  694, 1023)  1097
+The reference point is at (        178,        368)
+R is         359 for (     503,     521)      582
+R is         136 for (     302,     423)      380
+R is         340 for (      10,     664)      571
+R is         649 for (      43,    1003)      904
+R is         834 for (     694,    1023)     1097
+R is         653 for (     694,     768)      893
+X,Y ref are (  -49082987, -101217832)
+o_data:   -1097 B2_r:          0
+o_data:   55427 B2_r:       1097
+o_data:   45944 B2_r:      56524
+o_data:  196298 B2_r:     102468
+o_data:  -66720 B2_r:     298766
+o_data:  -18522 B2_r:     365486
+o_data: -416085 B2_r:     346964
+o_data: -652093 B2_r:     763049
+o_data: -131580 B2_r:     110956
+o_data: -176970 B2_r:     242536
+o_data:  -51052 B2_r:      65566
+o_data:  -24730 B2_r:     116618
+o_data:       x B2_r:      91888
+Object31: Golde/Return => 0/0, PASS
+
+Object32(out):  X     Y     R
+          1:  694, 1023,  377
+          2:   10,  664,  968
+          3:  503,  521,  530
+          4:   43, 1003,  959
+          5:  302,  423,  754
+          6:  694,  768,  279
+Values in X_ary
+  694    10   503    43   302   694
+--------------------
+Values in X_ary after sort
+  694   694   503   302    10    43
+--------------------
+B2 B4 are (     571243,  941032)
+B2 B4 are (     571243,  941032)
+Getting (  694, 1023)   377
+Getting (  503,  521)   530
+Getting (   10,  664)   968
+The reference point is at (        975,        762)
+R is         384 for (     694,    1023)      377
+R is         281 for (     694,     768)      279
+R is         530 for (     503,     521)      530
+R is         754 for (     302,     423)      754
+R is         970 for (      10,     664)      968
+R is         963 for (      43,    1003)      959
+X,Y ref are ( -268057059, -209592268)
+o_data:   71655 B2_r:          0
+o_data: -176970 B2_r:      71655
+o_data:   70553 B2_r:    -105315
+o_data:  -24730 B2_r:     -34762
+o_data:   -2185 B2_r:     -59492
+o_data:   55427 B2_r:     -57307
+o_data: -261181 B2_r:      -1880
+o_data:  196298 B2_r:     259301
+o_data: -323901 B2_r:     455599
+o_data:  -18522 B2_r:     779500
+o_data: -175531 B2_r:     760978
+o_data: -652093 B2_r:     936509
+o_data:       x B2_r:     284416
+Object32: Golde/Return => 0/0, PASS
+
+Object33(in):   X     Y     R
+          1:  321,  870,  389
+          2: 1010,  643,  378
+          3:  567, 1003,  373
+          4:  970,  280,  490
+          5:  321,  127,  595
+          6:  432,  123,  549
+Values in X_ary
+  321  1010   567   970   321   432
+--------------------
+Values in X_ary after sort
+  321   567  1010   970   432   321
+--------------------
+B2 B4 are (    -291023,  404134)
+B2 B4 are (    -291023,  404134)
+Getting (  321,  870)   389
+Getting ( 1010,  643)   378
+Getting (  432,  123)   549
+The reference point is at (        634,        635)
+R is         391 for (     321,     870)      389
+R is         374 for (     567,    1003)      373
+R is         376 for (    1010,     643)      378
+R is         489 for (     970,     280)      490
+R is         550 for (     432,     123)      549
+R is         597 for (     321,     127)      595
+X,Y ref are ( -310662455, -310979207)
+o_data:  -99439 B2_r:          0
+o_data: -171327 B2_r:      99439
+o_data: -138904 B2_r:     -71888
+o_data: -648449 B2_r:      67016
+o_data: -136168 B2_r:    -581433
+o_data: -340910 B2_r:    -445265
+o_data: -243742 B2_r:    -786175
+o_data:   -1650 B2_r:    -542433
+o_data:  -57640 B2_r:    -544083
+o_data:   15381 B2_r:    -486443
+o_data: -232559 B2_r:    -471062
+o_data:  238503 B2_r:    -238503
+o_data:       x B2_r:          0
+Object33: Golde/Return => 1/1, PASS
+
+Object34(in):   X     Y     R
+          1:  103,  500,  307
+          2:  400,   80,  430
+          3:  130,  210,  410
+          4:  710,  620,  319
+          5:  980,  120,  690
+          6:  300,  800,  310
+Values in X_ary
+  103   400   130   710   980   300
+--------------------
+Values in X_ary after sort
+  103   300   710   980   400   130
+--------------------
+B2 B4 are (    -310190,   92430)
+B2 B4 are (    -310190,   92430)
+Getting (  103,  500)   307
+Getting (  710,  620)   319
+Getting (  400,   80)   430
+The reference point is at (        413,        512)
+R is         310 for (     103,     500)      307
+R is         309 for (     300,     800)      310
+R is         316 for (     710,     620)      319
+R is         689 for (     980,     120)      690
+R is         432 for (     400,      80)      430
+R is         414 for (     130,     210)      410
+X,Y ref are ( -120048360, -148839696)
+o_data:  -90636 B2_r:          0
+o_data:  -67600 B2_r:      90636
+o_data:  -97740 B2_r:      23036
+o_data: -382000 B2_r:     120776
+o_data: -177660 B2_r:    -261224
+o_data: -522400 B2_r:     -83564
+o_data: -250040 B2_r:    -605964
+o_data:   30400 B2_r:    -355924
+o_data: -118330 B2_r:    -325524
+o_data:   73600 B2_r:    -207194
+o_data:  -90224 B2_r:    -133594
+o_data:   43370 B2_r:     -43370
+o_data:       x B2_r:          0
+Object34: Golde/Return => 1/1, PASS
+
+Object35(in):   X     Y     R
+          1:  503,  521,  299
+          2:   43, 1003,  421
+          3:  694, 1023,  622
+          4:   10,  664,  214
+          5:  694,  768,  496
+          6:  302,  423,  213
+Values in X_ary
+  503    43   694    10   694   302
+--------------------
+Values in X_ary after sort
+  503   302    10    43   694   694
+--------------------
+B2 B4 are (      19924, -353116)
+B2 B4 are (      19924, -353116)
+Getting (  503,  521)   299
+Getting (   10,  664)   214
+Getting (  694, 1023)   622
+The reference point is at (        217,        624)
+R is         304 for (     503,     521)      299
+R is         218 for (     302,     423)      213
+R is         211 for (      10,     664)      214
+R is         417 for (      43,    1003)      421
+R is         622 for (     694,    1023)      622
+R is         498 for (     694,     768)      496
+X,Y ref are (  -59762204, -171681536)
+o_data:  -48731 B2_r:          0
+o_data:   55427 B2_r:      48731
+o_data:  -38207 B2_r:     104158
+o_data:  196298 B2_r:     142365
+o_data:  -71493 B2_r:     338663
+o_data:  -18522 B2_r:     410156
+o_data: -250209 B2_r:     391634
+o_data: -652093 B2_r:     641843
+o_data: -121635 B2_r:     -10250
+o_data: -176970 B2_r:     111385
+o_data:  -90315 B2_r:     -65585
+o_data:  -24730 B2_r:      24730
+o_data:       x B2_r:          0
+Object35: Golde/Return => 1/1, PASS
+
+Object36(out):  X     Y     R
+          1:  103,   50,  918
+          2:  298,  560,  884
+          3:  710,   50,  311
+          4:  103,  340,  962
+          5:  982,  280,  233
+          6:  755,  510,  531
+Values in X_ary
+  103   298   710   103   982   755
+--------------------
+Values in X_ary after sort
+  103   103   298   755   982   710
+--------------------
+B2 B4 are (    -225282, -909025)
+B2 B4 are (    -225282, -909025)
+Getting (  103,   50)   918
+Getting (  298,  560)   884
+Getting (  982,  280)   233
+The reference point is at (       1019,         55)
+R is         916 for (     103,      50)      918
+R is         959 for (     103,     340)      962
+R is         880 for (     298,     560)      884
+R is         526 for (     755,     510)      531
+R is         228 for (     982,     280)      233
+R is         309 for (     710,      50)      311
+X,Y ref are ( -411316850,  -22563195)
+o_data: -265640 B2_r:          0
+o_data:   29870 B2_r:     265640
+o_data: -257095 B2_r:     295510
+o_data:  -43640 B2_r:     552605
+o_data: -194735 B2_r:     508965
+o_data: -270820 B2_r:     703700
+o_data:  -42565 B2_r:     432880
+o_data: -289420 B2_r:     475445
+o_data:   69710 B2_r:     186025
+o_data: -149700 B2_r:     255735
+o_data:   -3035 B2_r:     106035
+o_data:   30350 B2_r:     109070
+o_data:       x B2_r:     139420
+Object36: Golde/Return => 0/0, PASS
+
+Object37(out):  X     Y     R
+          1:   10,  664,  815
+          2:  694,  768,  180
+          3:   43, 1003,  743
+          4:  694, 1023,  130
+          5:  302,  423,  695
+          6:  503,  521,  491
+Values in X_ary
+   10   694    43   694   302   503
+--------------------
+Values in X_ary after sort
+   10    43   694   694   503   302
+--------------------
+B2 B4 are (    -867247, -253299)
+B2 B4 are (    -867247, -253299)
+Getting (   10,  664)   815
+Getting (  694, 1023)   130
+Getting (  503,  521)   491
+The reference point is at (        783,        929)
+R is         817 for (      10,     664)      815
+R is         744 for (      43,    1003)      743
+R is         129 for (     694,    1023)      130
+R is         184 for (     694,     768)      180
+R is         495 for (     503,     521)      491
+R is         698 for (     302,     423)      695
+X,Y ref are ( -215243526, -255305919)
+o_data: -253302 B2_r:          0
+o_data:  -18522 B2_r:     253302
+o_data:  -62974 B2_r:     234780
+o_data: -652093 B2_r:     297754
+o_data:   22695 B2_r:    -354339
+o_data: -176970 B2_r:    -331644
+o_data:   -8768 B2_r:    -508614
+o_data:  -24730 B2_r:    -499846
+o_data:  -54568 B2_r:    -524576
+o_data:   55427 B2_r:    -470008
+o_data: -263673 B2_r:    -414581
+o_data:  196298 B2_r:    -150908
+o_data:       x B2_r:      45390
+Object37: Golde/Return => 0/0, PASS
+
+Object38(out):  X     Y     R
+          1:  400,   80,  836
+          2:  300,  800,  110
+          3:  103,  500,  454
+          4:  980,  120, 1042
+          5:  130,  210,  720
+          6:  710,  620,  502
+Values in X_ary
+  400   300   103   980   130   710
+--------------------
+Values in X_ary after sort
+  400   130   103   300   710   980
+--------------------
+B2 B4 are (    -293495, -584496)
+B2 B4 are (    -293495, -584496)
+Getting (  400,   80)   836
+Getting (  103,  500)   454
+Getting (  710,  620)   502
+The reference point is at (        298,        914)
+R is         840 for (     400,      80)      836
+R is         724 for (     130,     210)      720
+R is         458 for (     103,     500)      454
+R is         114 for (     300,     800)      110
+R is         506 for (     710,     620)      502
+R is        1047 for (     980,     120)     1042
+X,Y ref are (  -86755260, -265821898)
+o_data: -211920 B2_r:          0
+o_data:   73600 B2_r:     211920
+o_data:  -67728 B2_r:     285520
+o_data:   43370 B2_r:     353248
+o_data:   23058 B2_r:     396618
+o_data:  -67600 B2_r:     419676
+o_data:   46380 B2_r:     352076
+o_data: -382000 B2_r:     398456
+o_data: -126620 B2_r:      16456
+o_data: -522400 B2_r:     143076
+o_data: -487800 B2_r:    -379324
+o_data:   30400 B2_r:     108476
+o_data:       x B2_r:     138876
+Object38: Golde/Return => 0/0, PASS
+
+Object39(in):   X     Y     R
+          1:  321,  870,  724
+          2:  567, 1003,  786
+          3:  321,  127,  333
+          4:  432,  123,  230
+          5:  970,  280,  334
+          6: 1010,  643,  561
+Values in X_ary
+  321   567   321   432   970  1010
+--------------------
+Values in X_ary after sort
+  321   567  1010   970   432   321
+--------------------
+B2 B4 are (    -391532,   93456)
+B2 B4 are (    -391532,   93456)
+Getting (  321,  870)   724
+Getting ( 1010,  643)   561
+Getting (  432,  123)   230
+The reference point is at (        643,        217)
+R is         728 for (     321,     870)      724
+R is         790 for (     567,    1003)      786
+R is         562 for (    1010,     643)      561
+R is         333 for (     970,     280)      334
+R is         231 for (     432,     123)      230
+R is         334 for (     321,     127)      333
+X,Y ref are ( -314753876, -106667492)
+o_data: -203464 B2_r:          0
+o_data: -171327 B2_r:     203464
+o_data: -320838 B2_r:      32137
+o_data: -648449 B2_r:     352975
+o_data: -116181 B2_r:    -295474
+o_data: -340910 B2_r:    -179293
+o_data:  -17445 B2_r:    -520203
+o_data:   -1650 B2_r:    -502758
+o_data:  -11278 B2_r:    -504408
+o_data:   15381 B2_r:    -493130
+o_data: -239246 B2_r:    -477749
+o_data:  238503 B2_r:    -238503
+o_data:       x B2_r:          0
+Object39: Golde/Return => 1/1, PASS
+
+Object40(in):   X     Y     R
+          1:  400,   80,  493
+          2:  103,  500,  816
+          3:  710,  620,  426
+          4:  130,  210,  742
+          5:  300,  800,  811
+          6:  980,  120,  150
+Values in X_ary
+  400   103   710   130   300   980
+--------------------
+Values in X_ary after sort
+  400   130   103   300   710   980
+--------------------
+B2 B4 are (     164299, -391837)
+B2 B4 are (     164299, -391837)
+Getting (  400,   80)   493
+Getting (  103,  500)   816
+Getting (  710,  620)   426
+The reference point is at (        874,        227)
+R is         496 for (     400,      80)      493
+R is         744 for (     130,     210)      742
+R is         818 for (     103,     500)      816
+R is         811 for (     300,     800)      811
+R is         426 for (     710,     620)      426
+R is         151 for (     980,     120)      150
+X,Y ref are ( -254153160,  -66051155)
+o_data: -101310 B2_r:          0
+o_data:   73600 B2_r:     101310
+o_data: -216219 B2_r:     174910
+o_data:   43370 B2_r:     391129
+o_data: -285081 B2_r:     434499
+o_data:  -67600 B2_r:     719580
+o_data: -131610 B2_r:     651980
+o_data: -382000 B2_r:     783590
+o_data:  -24110 B2_r:     401590
+o_data: -522400 B2_r:     425700
+o_data:  -66300 B2_r:     -96700
+o_data:   30400 B2_r:     -30400
+o_data:       x B2_r:          0
+Object40: Golde/Return => 1/1, PASS
+
+Object41(out):  X     Y     R
+          1:  970,  280,  344
+          2:  321,  870,  774
+          3:  432,  123,  217
+          4:  321,  127,  326
+          5: 1010,  643,  600
+          6:  567, 1003,  840
+Values in X_ary
+  970   321   432   321  1010   567
+--------------------
+Values in X_ary after sort
+  970   432   321   321   567  1010
+--------------------
+B2 B4 are (     444035,  139533)
+B2 B4 are (     444035,  139533)
+Getting (  970,  280)   344
+Getting (  321,  127)   326
+Getting (  567, 1003)   840
+The reference point is at (        642,        164)
+R is         348 for (     970,     280)      344
+R is         214 for (     432,     123)      217
+R is         323 for (     321,     127)      326
+R is         776 for (     321,     870)      774
+R is         842 for (     567,    1003)      840
+R is         604 for (    1010,     643)      600
+X,Y ref are ( -340905150,  -87563844)
+o_data:   10912 B2_r:          0
+o_data:   -1650 B2_r:      10912
+o_data:   -5391 B2_r:       9262
+o_data:   15381 B2_r:      14653
+o_data: -238503 B2_r:      30034
+o_data:  238503 B2_r:     268537
+o_data: -216369 B2_r:     507040
+o_data: -171327 B2_r:     723409
+o_data: -344677 B2_r:     552082
+o_data: -648449 B2_r:     896759
+o_data: -114424 B2_r:     248310
+o_data: -340910 B2_r:     362734
+o_data:       x B2_r:      21824
+Object41: Golde/Return => 0/0, PASS
+
+Object42(out):  X     Y     R
+          1:  321,  127,  936
+          2:  321,  870,  655
+          3:  970,  280,  519
+          4:  567, 1003,  454
+          5:  432,  123,  865
+          6: 1010,  643,  160
+Values in X_ary
+  321   321   970   567   432  1010
+--------------------
+Values in X_ary after sort
+  321   321   567  1010   970   432
+--------------------
+B2 B4 are (    -939154, -753433)
+B2 B4 are (    -939154, -753433)
+Getting (  321,  127)   936
+Getting (  567, 1003)   454
+Getting (  970,  280)   519
+The reference point is at (        972,        798)
+R is         935 for (     321,     127)      936
+R is         655 for (     321,     870)      655
+R is         454 for (     567,    1003)      454
+R is         160 for (    1010,     643)      160
+R is         518 for (     970,     280)      519
+R is         864 for (     432,     123)      865
+X,Y ref are ( -516316746, -424166428)
+o_data: -483693 B2_r:          0
+o_data:  238503 B2_r:     483693
+o_data: -104295 B2_r:     722196
+o_data: -171327 B2_r:     826491
+o_data:   54985 B2_r:     655164
+o_data: -648449 B2_r:     710149
+o_data:  -19994 B2_r:      61700
+o_data: -340910 B2_r:      81694
+o_data: -278370 B2_r:    -259216
+o_data:   -1650 B2_r:      19154
+o_data:  -77085 B2_r:      17504
+o_data:   15381 B2_r:      94589
+o_data:       x B2_r:     109970
+Object42: Golde/Return => 0/0, PASS
+
+Object43(in):   X     Y     R
+          1:  567, 1003,  551
+          2:  321,  127,  600
+          3: 1010,  643,  261
+          4:  321,  870,  599
+          5:  432,  123,  520
+          6:  970,  280,  282
+Values in X_ary
+  567   321  1010   321   432   970
+--------------------
+Values in X_ary after sort
+  567  1010   970   432   321   321
+--------------------
+B2 B4 are (      42060,  632363)
+B2 B4 are (      42060,  632363)
+Getting (  567, 1003)   551
+Getting (  970,  280)   282
+Getting (  321,  127)   600
+The reference point is at (        792,        497)
+R is         554 for (     567,    1003)      551
+R is         262 for (    1010,     643)      261
+R is         281 for (     970,     280)      282
+R is         519 for (     432,     123)      520
+R is         599 for (     321,     127)      600
+R is         601 for (     321,     870)      599
+X,Y ref are ( -420667233, -263859897)
+o_data: -143158 B2_r:          0
+o_data: -648449 B2_r:     143158
+o_data:  -73294 B2_r:    -505291
+o_data: -340910 B2_r:    -431997
+o_data: -144692 B2_r:    -772907
+o_data:   -1650 B2_r:    -628215
+o_data:  -42954 B2_r:    -629865
+o_data:   15381 B2_r:    -586911
+o_data: -349953 B2_r:    -571530
+o_data:  238503 B2_r:    -221577
+o_data: -154401 B2_r:      16926
+o_data: -171327 B2_r:     171327
+o_data:       x B2_r:          0
+Object43: Golde/Return => 1/1, PASS
+
+Object44(in):   X     Y     R
+          1:  710,  620,  514
+          2:  130,  210,  270
+          3:  300,  800,  598
+          4:  103,  500,  415
+          5:  400,   80,  130
+          6:  980,  120,  586
+Values in X_ary
+  710   130   300   103   400   980
+--------------------
+Values in X_ary after sort
+  710   980   400   130   103   300
+--------------------
+B2 B4 are (     237402,  267960)
+B2 B4 are (     237402,  267960)
+Getting (  710,  620)   514
+Getting (  400,   80)   130
+Getting (  103,  500)   415
+The reference point is at (        396,        207)
+R is         519 for (     710,     620)      514
+R is         590 for (     980,     120)      586
+R is         127 for (     400,      80)      130
+R is         266 for (     130,     210)      270
+R is         414 for (     103,     500)      415
+R is         601 for (     300,     800)      598
+X,Y ref are ( -115350000,  -60427158)
+o_data: -268510 B2_r:          0
+o_data: -522400 B2_r:     268510
+o_data:  -73820 B2_r:    -253890
+o_data:   30400 B2_r:    -180070
+o_data:  -33770 B2_r:    -149670
+o_data:   73600 B2_r:    -115900
+o_data:  -77059 B2_r:     -42300
+o_data:   43370 B2_r:      34759
+o_data: -145621 B2_r:      78129
+o_data:  -67600 B2_r:     223750
+o_data: -225850 B2_r:     156150
+o_data: -382000 B2_r:     382000
+o_data:       x B2_r:          0
+Object44: Golde/Return => 1/1, PASS
+
+Object45(out):  X     Y     R
+          1:   10,  664,  849
+          2:  694, 1023,  924
+          3:  503,  521,  444
+          4:  694,  768,  669
+          5:  302,  423,  471
+          6:   43, 1003, 1085
+Values in X_ary
+   10   694   503   694   302    43
+--------------------
+Values in X_ary after sort
+   10    43   694   694   503   302
+--------------------
+B2 B4 are (    -477097, -303560)
+B2 B4 are (    -477097, -303560)
+Getting (   10,  664)   849
+Getting (  694, 1023)   924
+Getting (  503,  521)   444
+The reference point is at (        647,         95)
+R is         854 for (      10,     664)      849
+R is        1091 for (      43,    1003)     1085
+R is         929 for (     694,    1023)      924
+R is         675 for (     694,     768)      669
+R is         450 for (     503,     521)      444
+R is         476 for (     302,     423)      471
+X,Y ref are ( -177938143,  -26172949)
+o_data: -234720 B2_r:          0
+o_data:  -18522 B2_r:     234720
+o_data: -603188 B2_r:     216198
+o_data: -652093 B2_r:     819386
+o_data:  -11985 B2_r:     167293
+o_data: -176970 B2_r:     179278
+o_data:  116934 B2_r:       2308
+o_data:  -24730 B2_r:     119242
+o_data:   99738 B2_r:      94512
+o_data:   55427 B2_r:     194250
+o_data:   12631 B2_r:     249677
+o_data:  196298 B2_r:     262308
+o_data:       x B2_r:     458606
+Object45: Golde/Return => 0/0, PASS
+
+Object46(out):  X     Y     R
+          1:  980,  120,  968
+          2:  710,  620,  500
+          3:  300,  800,  113
+          4:  103,  500,  249
+          5:  130,  210,  517
+          6:  400,   80,  664
+Values in X_ary
+  980   710   300   103   130   400
+--------------------
+Values in X_ary after sort
+  980   400   130   103   300   710
+--------------------
+B2 B4 are (     122032, -339728)
+B2 B4 are (     122032, -339728)
+Getting (  980,  120)   968
+Getting (  130,  210)   517
+Getting (  300,  800)   113
+The reference point is at (        217,        716)
+R is         968 for (     980,     120)      968
+R is         662 for (     400,      80)      664
+R is         513 for (     130,     210)      517
+R is         244 for (     103,     500)      249
+R is         118 for (     300,     800)      113
+R is         502 for (     710,     620)      500
+X,Y ref are ( -112164640, -370357920)
+o_data: -376200 B2_r:          0
+o_data:   30400 B2_r:     376200
+o_data: -147930 B2_r:     406600
+o_data:   73600 B2_r:     554530
+o_data:  -38892 B2_r:     628130
+o_data:   43370 B2_r:     667022
+o_data:    8352 B2_r:     710392
+o_data:  -67600 B2_r:     718744
+o_data:  -49380 B2_r:     651144
+o_data: -382000 B2_r:     700524
+o_data: -220580 B2_r:     318524
+o_data: -522400 B2_r:     539104
+o_data:       x B2_r:      16704
+Object46: Golde/Return => 0/0, PASS
+
+Object47(out):  X     Y     R
+          1:  103,  500,  420
+          2:  300,  800,  739
+          3:  400,   80,  270
+          4:  130,  210,  130
+          5:  710,  620,  792
+          6:  980,  120,  850
+Values in X_ary
+  103   300   400   130   710   980
+--------------------
+Values in X_ary after sort
+  103   300   710   980   400   130
+--------------------
+B2 B4 are (     -88514,   -4646)
+B2 B4 are (     -88514,   -4646)
+Getting (  103,  500)   420
+Getting (  710,  620)   792
+Getting (  400,   80)   270
+The reference point is at (        133,         78)
+R is         423 for (     103,     500)      420
+R is         741 for (     300,     800)      739
+R is         792 for (     710,     620)      792
+R is         848 for (     980,     120)      850
+R is         267 for (     400,      80)      270
+R is         132 for (     130,     210)      130
+X,Y ref are (  -38839320,  -22833656)
+o_data:  -92134 B2_r:          0
+o_data:  -67600 B2_r:      92134
+o_data: -326080 B2_r:      24534
+o_data: -382000 B2_r:     350614
+o_data: -434840 B2_r:     -31386
+o_data: -522400 B2_r:     403454
+o_data:   -9520 B2_r:    -118946
+o_data:   30400 B2_r:    -109426
+o_data:   35250 B2_r:     -79026
+o_data:   73600 B2_r:     -43776
+o_data:    2694 B2_r:      29824
+o_data:   43370 B2_r:      32518
+o_data:       x B2_r:      75888
+Object47: Golde/Return => 0/0, PASS
+
+Object48(in):   X     Y     R
+          1:  321,  870,  264
+          2: 1010,  643,  511
+          3:  321,  127,  576
+          4:  567, 1003,  334
+          5:  432,  123,  556
+          6:  970,  280,  613
+Values in X_ary
+  321  1010   321   567   432   970
+--------------------
+Values in X_ary after sort
+  321   567  1010   970   432   321
+--------------------
+B2 B4 are (    -191092,  448814)
+B2 B4 are (    -191092,  448814)
+Getting (  321,  870)   264
+Getting ( 1010,  643)   511
+Getting (  432,  123)   556
+The reference point is at (        502,        675)
+R is         266 for (     321,     870)      264
+R is         334 for (     567,    1003)      334
+R is         509 for (    1010,     643)      511
+R is         612 for (     970,     280)      613
+R is         556 for (     432,     123)      556
+R is         577 for (     321,     127)      576
+X,Y ref are ( -246156358, -330671386)
+o_data:  -72043 B2_r:          0
+o_data: -171327 B2_r:      72043
+o_data: -168704 B2_r:     -99284
+o_data: -648449 B2_r:      69420
+o_data: -185684 B2_r:    -579029
+o_data: -340910 B2_r:    -393345
+o_data: -285986 B2_r:    -734255
+o_data:   -1650 B2_r:    -448269
+o_data:  -61552 B2_r:    -449919
+o_data:   15381 B2_r:    -388367
+o_data: -134483 B2_r:    -372986
+o_data:  238503 B2_r:    -238503
+o_data:       x B2_r:          0
+Object48: Golde/Return => 1/1, PASS
+
+Object49(out):  X     Y     R
+          1:  567, 1003, 1016
+          2: 1010,  643, 1059
+          3:  321,  127,  222
+          4:  432,  123,  332
+          5:  321,  870,  801
+          6:  970,  280,  888
+Values in X_ary
+  567  1010   321   432   321   970
+--------------------
+Values in X_ary after sort
+  567  1010   970   432   321   321
+--------------------
+B2 B4 are (      32243,  112678)
+B2 B4 are (      32243,  112678)
+Getting (  567, 1003)  1016
+Getting (  970,  280)   888
+Getting (  321,  127)   222
+The reference point is at (        103,         99)
+R is        1016 for (     567,    1003)     1016
+R is        1058 for (    1010,     643)     1059
+R is         886 for (     970,     280)      888
+R is         330 for (     432,     123)      332
+R is         220 for (     321,     127)      222
+R is         801 for (     321,     870)      801
+X,Y ref are (  -55015374,  -52837204)
+o_data: -567512 B2_r:          0
+o_data: -648449 B2_r:     567512
+o_data: -307481 B2_r:     -80937
+o_data: -340910 B2_r:     226544
+o_data:  -38741 B2_r:    -114366
+o_data:   -1650 B2_r:     -75625
+o_data:    3980 B2_r:     -77275
+o_data:   15381 B2_r:     -73295
+o_data:  161974 B2_r:     -57914
+o_data:  238503 B2_r:     104060
+o_data: -160672 B2_r:     342563
+o_data: -171327 B2_r:     503235
+o_data:       x B2_r:     331908
+Object49: Golde/Return => 0/0, PASS
+
+Object50(out):  X     Y     R
+          1:  321,  870,  130
+          2:  432,  123,  883
+          3:  970,  280,  969
+          4:  567, 1003,  246
+          5:  321,  127,  873
+          6: 1010,  643,  775
+Values in X_ary
+  321   432   970   567   321  1010
+--------------------
+Values in X_ary after sort
+  321   567  1010   970   432   321
+--------------------
+B2 B4 are (       5058,  710488)
+B2 B4 are (       5058,  710488)
+Getting (  321,  870)   130
+Getting ( 1010,  643)   775
+Getting (  432,  123)   883
+The reference point is at (        320,        996)
+R is         126 for (     321,     870)      130
+R is         247 for (     567,    1003)      246
+R is         775 for (    1010,     643)      775
+R is         967 for (     970,     280)      969
+R is         880 for (     432,     123)      883
+R is         869 for (     321,     127)      873
+X,Y ref are ( -157037554, -487553722)
+o_data:   31129 B2_r:          0
+o_data: -171327 B2_r:      31129
+o_data:  -92021 B2_r:    -140198
+o_data: -648449 B2_r:     -48177
+o_data: -264590 B2_r:    -696626
+o_data: -340910 B2_r:    -432036
+o_data: -487258 B2_r:    -772946
+o_data:   -1650 B2_r:    -285688
+o_data:  -96455 B2_r:    -287338
+o_data:   15381 B2_r:    -190883
+o_data:     743 B2_r:    -175502
+o_data:  238503 B2_r:    -174759
+o_data:       x B2_r:      63744
+Object50: Golde/Return => 0/0, PASS
+
+-------------------------------------------------
+-- Simulation finish,  Pass = 49 , Fail =  1   --
+-------------------------------------------------
+Simulation complete via $finish(1) at time 120250 NS + 0
+./tb.sv:151              $finish;
+ncsim> exit
